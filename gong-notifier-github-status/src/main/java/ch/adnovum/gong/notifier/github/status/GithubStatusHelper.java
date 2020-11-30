@@ -142,7 +142,7 @@ public class GithubStatusHelper {
 		}
 
 		// Fallback to password that might be set for the material itself.
-		LOGGER.debug("Pipeline " + stateChange.getPipelineName() + " does not have " + STATUS_AUTH_TOKEN + " variable configured."
+		LOGGER.debug("Pipeline " + stateChange.getPipelineName() + " does not have " + STATUS_AUTH_TOKEN +  " variable configured."
 				+ "Trying to fallback to token configured on the material.");
 
 		switch (ghInfo.getMaterialType()) {
